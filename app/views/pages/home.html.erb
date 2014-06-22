@@ -1,7 +1,14 @@
 <div class="jumbotron center">
+<% if user_signed_in? %>
+<h2>Congrats! You're signed in.</h2>
+<% else %>
+<p>
 	<h1>Welcome! </h1>
 	<h2>How did you get here?</h2>
 	<h3> Well you're here now so why not come in!</h3>
-	<%= link_to "login", "#", class: "btn btn-default btn-lg" %>
-	<%= link_to "sign up", "#", class: "btn btn-primary btn-lg" %>
+	<%= link_to "login", new_user_session_path, class: "btn btn-default btn-lg" %>
+	<%= link_to "sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+</p>
+<% end %>
+
 </div>
