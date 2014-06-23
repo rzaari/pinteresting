@@ -12,7 +12,7 @@
   <tbody>
     <% @pins.each do |pin| %>
       <tr>
-        <td><%= pin.user.email %></td>
+        <td><%= pin.user_id %></td>
         <td><%= pin.description %></td>
         <td><%= link_to 'Show', pin,class: "btn btn-default" %></td>
         
