@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
 #pins {
   margin: 0 auto;
 }
@@ -13,4 +14,23 @@
 
 .box img {
   width: 100%;
+}
+
+.desc_font {
+	text-align: center ;
+	font-size: 1.5em;
+	font-style:italic;
+}
+
+	.name_font {
+	font-size: 0.75em;
+}
+
+.actions {
+	text-align: center ;
+}
+
+.pin_button {
+text-align: center ;
+	
 }
